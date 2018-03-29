@@ -24,7 +24,7 @@
 
   <body>
     <!-- Navigation-->
-    <div id="agp-navbar" class="container">
+    <header class="container">
       <!-- using default navbar-light to get hamburger icon displayed on collapse -->
       <nav class="navbar navbar-expand-md navbar-light bg-light">
 
@@ -35,7 +35,6 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarToggler">
-
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -46,44 +45,48 @@
           </ul>
         </div>
       </nav>
-    </div>
+    </header>
     <!-- Page Content -->
     <!-- Header -->
-    <div id="agp-header-container" class="container">
-      <div id="agp-header-row" class="row">
-        <div id="agp-header-col" class="col">
+    <div class="container">
+      <div class="row">
+        <div class="col">
           <h1>Project Portfolio</h1>
-          <div id="agp-header-logo">
+          <div>
+            <!-- with the srcset images and sizes I'm looking to vary the image used based on screen size
+            <!-- I've set the the size of the image to occupy 100% of the available viewport knowing that
+            <!-- the bootstrap container will ultimately control the size of the image within-->
             <img class="card-img-top agp-header-logo"
                   src="images/agapanthus-500-333.png"
-                  srcset="images/agapanthus-760-605.png 700w, images/agapanthus-1028-625.png 1000w"
-                  sizes="(min-width:760px) and (max-width:960px) 700px,
-                         (min-width:961px) 1000px"
+                  srcset="images/agapanthus-500-333.png 500w, images/agapanthus-760-605.png 760w, images/agapanthus-1028-625.png 1028w"
+                  sizes="(max-width:760px) 100vw,
+                          (min-width:761px) and (max-width:1027px) 100vw,
+                          (min-width:1027px) 1000px"
                   alt="Large Logo">
           </div>
-          <div id="agp-header-caption" class="caption agp-header-caption">
+          <div class="caption agp-header-caption">
             Putting the world on the web one business at a time...
           </div>
         </div>
       </div>
     </div>
     <!-- Project Header -->
-    <div id="agp-project-header-container" class="container">
-      <div id="agp-project-header-row" class="row">
+    <div class="container">
+      <div class="row">
         <div class="col agp-project-heading">
           <h4>Current Projects</h4>
         </div>
       </div>
     </div>
     <!-- Portfolio Cards -->
-    <div id="agp-portfolio-card-container" class="container">
-      <div  id="agp-portfolio-card-row" class="row">
+    <div class="container">
+      <div class="row">
         <!-- Card 1 -->
-        <div id="agp-portfolio-item-1" class="col-lg-4 col-sm-6 agp-portfolio-item">
-          <div id="agp-portfolio-card-1" class="card">
+        <div class="col-lg-4 col-sm-6 agp-portfolio-item">
+          <div class="card">
             <a href="https://www.lwsa.co.uk"><img class="card-img-top" src="images/LWSA-700-360.png" alt="Lucy Williams Swimming Academy"></a>
-            <div id="agp-portfolio-card-body-1" class="card-body">
-              <div id="agp-portfolio-card-title-1" class="card-title">
+            <div class="card-body">
+              <div class="card-title">
                 <h4>
                   <a href="http://lwsa.co.uk/">LWSA</a>
                 </h4>
@@ -94,11 +97,11 @@
           </div>
         </div>
         <!-- Card 2 -->
-        <div id="agp-portfolio-item-2" class="col-lg-4 col-sm-6 agp-portfolio-item">
-          <div id="agp-portfolio-card-2" class="card">
+        <div class="col-lg-4 col-sm-6 agp-portfolio-item">
+          <div class="card">
             <a href="http://www.pazzazz.me/"><img class="card-img-top" src="images/pazzazz-700-360.png" alt="Pazzazz Me"></a>
-            <div id="agp-portfolio-card-body-2" class="card-body">
-              <div id="agp-portfolio-card-title-2" class="card-title">
+            <div class="card-body">
+              <div class="card-title">
                 <h4>
                   <a href="http://www.pazzazz.me/">Pazzazz Me</a>
                 </h4>
@@ -111,11 +114,11 @@
           </div>
         </div>
         <!-- Card 3 -->
-        <div id="agp-portfolio-item-3" class="col-lg-4 col-sm-6 agp-portfolio-item">
-          <div id="agp-portfolio-card-3" class="card">
+        <div class="col-lg-4 col-sm-6 agp-portfolio-item">
+          <div class="card">
             <a href="http://www.littlebrookhouse.co.uk/"><img class="card-img-top" src="images/lbh-700-360.png" alt="Little Brook House"></a>
-            <div id="agp-portfolio-card-body-3" class="card-body">
-              <div id="agp-portfolio-card-title-3" class="card-title">
+            <div class="card-body">
+              <div class="card-title">
                 <h4>
                   <a href="http://www.littlebrookhouse.co.uk/">Little Brook House</a>
                 </h4>
@@ -130,12 +133,14 @@
       </div>
     </div>
     <!-- Footer -->
-    <div id="agp-footer-container">
-      <footer id="agp-footer" class="py-5 bg-dark">
-        <div id="agp-footer-text" class="container">
-          <p class="m-0 text-center text-white">Copyright &copy; Agapanthus Consulting 2018</p>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <footer class="py-5 bg-dark">
+                <p class="m-0 text-center text-white">Copyright &copy; Agapanthus Consulting 2018</p>
+          </footer>
         </div>
-      </footer>
+      </div>
     </div>
 
 
