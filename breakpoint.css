@@ -1,0 +1,21 @@
+/* Bootstrap handles the majority of responsive design challenges
+   Here we are controlling the size of the caption text so that
+   it scales and fits nicely on the header caption */
+
+@media screen and (max-width: 450px){
+  .agp-header-caption {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 451px){
+  .agp-header-caption {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1028px) and (min-width: 801px){
+  .agp-header-caption {
+    font-size: 20px;
+  }
+}

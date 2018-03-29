@@ -1,0 +1,92 @@
+/*!
+baseline css for the portfolio page
+*/
+/* style standard html tags
+-------------------------------------------------------------------------------------*/
+h1 {
+  color: #0884ad;
+  text-align: center;
+}
+
+h4 {
+  color: #0884ad;
+}
+
+a {
+  color: #70c4e0;
+}
+/* Using Bootstrap 4 as the base theme so set up some specific styling for that first
+-------------------------------------------------------------------------------------*/
+/* set the default background for the nav bar and strip out padding */
+.navbar {
+  padding-left: 0;
+  background-color: white !important;
+}
+
+/* set brand to contrasting colour       */
+.navbar-brand {
+  color: #b82337 !important;
+}
+
+/* navbar links set to light blue grey   */
+.nav-link {
+  color: #70c4e0 !important;
+}
+
+/* hamburger for collpased menu */
+.navbar-toggler {
+  color: #acacac;
+}
+
+/* background color */
+.bg-dark {
+  background-color: #0884ad !important;
+}
+
+/* force the individual cards to occupy the full height of the container and pad them out */
+.card {
+  height: 100%;
+  padding-bottom: 1%;
+}
+
+/* Page specific styling
+-------------------------------------------------------------------------------------*/
+/* scale navbar logo */
+.agp-logo {
+  margin-left: 0;
+  height: 10%;
+  width: 10%;
+}
+
+/* style larger logo */
+.agp-header-logo {
+  top: 0;
+  left: 0;
+  border-bottom-style: ridge;
+  border-bottom-color: #09b6f2  ;
+  padding-bottom: 1%;
+}
+
+/* style scale and position caption on top of logo */
+.agp-header-caption {
+  color: #b82337;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translate(-70%, -50%);
+}
+
+/* style the project section header */
+.agp-project-heading {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+/* put a litte space between the portfolio items and the footer */
+.agp-portfolio-item {
+  margin-bottom : 1%;
+}
